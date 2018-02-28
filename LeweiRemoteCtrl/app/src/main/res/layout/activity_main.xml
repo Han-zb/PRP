@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.nanfang.leweiremotectrl.MainActivity">
+
+    <Button
+        android:id="@+id/btn_click"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@android:drawable/ic_btn_speak_now" />
+    <EditText
+        android:id="@+id/result"
+        android:layout_below="@id/btn_click"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/btn_click"
+        android:hint="语音指令"
+        android:maxLines="2"/>
+
+
+    <Button
+        android:id="@+id/btn_LEDswitch"
+        android:text="switch"
+        android:layout_below="@id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/btn_forward"
+        android:background="@drawable/arrows_up"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_above="@id/btn_pause"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/btn_pause"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:background="@android:drawable/ic_media_pause" />
+    <Button
+        android:id="@+id/btn_backward"
+        android:background="@drawable/arrows_down"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/btn_pause"
+        android:layout_centerInParent="true"/>
+    <Button
+        android:id="@+id/btn_left"
+        android:background="@drawable/arrows_left"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_toLeftOf="@id/btn_pause"/>
+    <Button
+        android:id="@+id/btn_right"
+        android:background="@drawable/arrows_right"
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        android:layout_toRightOf="@id/btn_pause"/>
+
+    <Button
+        android:id="@+id/btn_return"
+        android:text="return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/btn_backward"/>
+
+</RelativeLayout>
